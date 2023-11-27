@@ -6,3 +6,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    border: 3px solid gray;
+    text-align: center;
+    height: 30em;
+    width: 23em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: blueviolet;
+    border-radius: 20px;
+}
+button{
+    width: fit-content;
+}
+:is(input, label){
+    height: 3em;
+    width: 20em;
+    border-radius: 30px;
+    padding: 1px;
+}
+
+@media screen and (max-width:375px) {
+    .card
+   { height: 100%;
+    width: 100%;
+    border-radius: 0px;
+}
+}
